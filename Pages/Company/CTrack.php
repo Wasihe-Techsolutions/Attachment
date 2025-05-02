@@ -130,18 +130,18 @@ try {
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue shadow-lg p-3">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold text-white" href="CHome.php">AttachME</a>
+            <a class="navbar-brand fw-bold text-white" href="CHome.php">Attach Hub</a>
             <ul class="navbar-nav d-flex flex-row gap-4">
-                <li class="nav-item"><a href="CHome.php" class="nav-link text-white fw-bold fs-5">Dashboard</a></li>
+                <li class="nav-item"><a href="CHome.php" class="nav-link text-black fw-bold fs-5">Dashboard</a></li>
                 <li class="nav-item"><a href="COpportunities.php"
                         class="nav-link text-white fw-bold fs-5">Opportunities</a></li>
                 <li class="nav-item"><a href="CTrack.php"
                         class="nav-link text-white fw-bold fs-5 active">Applications</a></li>
-                <li class="nav-item"><a href="CNotifications.php" class="nav-link text-white fw-bold fs-5">Messages</a>
+                <li class="nav-item"><a href="CNotifications.php" class="nav-link text-black fw-bold fs-5">Messages</a>
                 </li>
-                <li class="nav-item"><a href="CProfile.php" class="nav-link text-white fw-bold fs-5">Profile</a></li>
+                <li class="nav-item"><a href="CProfile.php" class="nav-link text-black fw-bold fs-5">Profile</a></li>
             </ul>
         </div>
     </nav>
