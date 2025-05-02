@@ -168,7 +168,7 @@ try {
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-blue shadow-lg p-3">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold text-black" href="CHome.php">AttachME</a>
+            <a class="navbar-brand fw-bold text-black" href="CHome.php">Attach Hub</a>
             <ul class="navbar-nav d-flex flex-row gap-4">
                 <li class="nav-item"><a href="CHome.php" class="nav-link text-black fw-bold fs-5 active">Dashboard</a>
                 </li>

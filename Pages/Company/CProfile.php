@@ -97,18 +97,18 @@ try {
 <body class="bg-gray-100 d-flex flex-column min-vh-100">
 
     <!-- Top Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue shadow-lg p-3">
         <div class="container-fluid d-flex justify-content-between">
-            <h2 class="text-white fw-bold fs-3">AttachME</h2>
+            <h2 class="text-black fw-bold fs-3">Attach Hub</h2>
             <ul class="navbar-nav d-flex flex-row gap-4">
-                <li class="nav-item"><a href="CHome.php" class="nav-link text-white fw-bold fs-5"> Dashboard</a></li>
-                <li class="nav-item"><a href="COpportunities.php" class="nav-link text-white fw-bold fs-5">
+                <li class="nav-item"><a href="CHome.php" class="nav-link text-black fw-bold fs-5"> Dashboard</a></li>
+                <li class="nav-item"><a href="COpportunities.php" class="nav-link text-black fw-bold fs-5">
                         Opportunities</a></li>
-                <li class="nav-item"><a href="CTrack.php" class="nav-link text-white fw-bold fs-5"> Applications</a>
+                <li class="nav-item"><a href="CTrack.php" class="nav-link text-black fw-bold fs-5"> Applications</a>
                 </li>
-                <li class="nav-item"><a href="CNotifications.php" class="nav-link text-white fw-bold fs-5">
+                <li class="nav-item"><a href="CNotifications.php" class="nav-link text-black fw-bold fs-5">
                         Messages</a></li>
-                <li class="nav-item"><a href="CProfile.php" class="nav-link text-white fw-bold fs-5 active">
+                <li class="nav-item"><a href="CProfile.php" class="nav-link text-black fw-bold fs-5 active">
                         Profile</a></li>
             </ul>
         </div>
@@ -205,44 +205,6 @@ try {
                             </form>
                         </div>
                     </div>
-
-                    <!-- Account Actions Card -->
-                    <div class="card border-danger danger-zone">
-                        <div class="card-header bg-danger text-white">
-                            <h5 class="fw-bold mb-0">
-                                <i class="fas fa-exclamation-triangle me-2"></i>Danger Zone
-                            </h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h6 class="fw-bold">Delete Account</h6>
-                                    <p class="small text-muted mb-0">
-                                        This will permanently remove your company account and all related data.
-                                        This action cannot be undone.
-                                    </p>
-                                </div>
-                                <div class="col-md-4 text-end">
-                                    <button class="btn btn-outline-danger" id="deleteAccountBtn">
-                                        <i class="fas fa-trash-alt me-1"></i>Delete Account
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="row align-items-center mt-3 pt-3 border-top">
-                                <div class="col-md-8">
-                                    <h6 class="fw-bold">Logout</h6>
-                                    <p class="small text-muted mb-0">
-                                        Securely sign out of your account from this device.
-                                    </p>
-                                </div>
-                                <div class="col-md-4 text-end">
-                                    <a href="../../auth/logout.php" class="btn btn-outline-secondary">
-                                        <i class="fas fa-sign-out-alt me-1"></i>Logout
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
