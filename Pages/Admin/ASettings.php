@@ -19,7 +19,7 @@ $backupHistory = $conn->query("SELECT * FROM backup_history ORDER BY created_at 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Settings | AttachME</title>
+    <title>System Settings</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -138,7 +138,6 @@ $backupHistory = $conn->query("SELECT * FROM backup_history ORDER BY created_at 
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
                 <h1 class="h3 mb-1 text-gray-800 fw-bold">System Settings</h1>
-                <p class="text-muted">Configure application preferences and system parameters</p>
             </div>
             <div class="dropdown">
                 <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -147,7 +146,6 @@ $backupHistory = $conn->query("SELECT * FROM backup_history ORDER BY created_at 
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"><i class="fas fa-database me-2"></i> Backup Now</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fas fa-bell me-2"></i> Notification Settings</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-user-shield me-2"></i> Audit Log</a></li>
                 </ul>
             </div>
         </div>
@@ -200,7 +198,7 @@ $backupHistory = $conn->query("SELECT * FROM backup_history ORDER BY created_at 
                                 <div class="row g-3 mb-4">
                                     <div class="col-md-6">
                                         <label class="form-label">System Name</label>
-                                        <input type="text" name="system_name" class="form-control" value="<?= htmlspecialchars($settings['system_name'] ?? 'AttachME') ?>" readonly>
+                                        <input type="text" name="system_name" class="form-control" value="<?= htmlspecialchars($settings['system_name'] ?? 'AttachHUB') ?>" readonly>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="d-none"></div>
@@ -259,14 +257,7 @@ $backupHistory = $conn->query("SELECT * FROM backup_history ORDER BY created_at 
                                             <td><?= htmlspecialchars($admin['full_name']) ?></td>
                                             <td><?= htmlspecialchars($admin['email']) ?></td>
                                             <td><?= $admin['last_login'] ? date('M d, Y', strtotime($admin['last_login'])) : 'Never' ?></td>
-                                            <!-- <td>
-                                                <button class="btn btn-sm btn-outline-primary me-2">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                <button class="btn btn-sm btn-outline-danger">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td> -->
+                                           
                                         </tr>
                                         <?php endforeach; ?>
                                     </tbody>

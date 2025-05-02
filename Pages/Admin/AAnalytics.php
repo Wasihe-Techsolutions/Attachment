@@ -97,7 +97,7 @@ $statusData = $conn->query("
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analytics Dashboard | AttachME</title>
+    <title>Analytics Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -116,21 +116,21 @@ $statusData = $conn->query("
         .glass-card {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(10px);
-            border-radius: 12px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
+            border-radius: 15px;
+            box-shadow: 10px 4px 30px rgba(0, 0, 0, 0.05);
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.5s ease;
         }
         
         .glass-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-6px);
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
         }
         
         .stat-card {
-            border-left: 4px solid;
-            border-radius: 8px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-left: 14px solid;
+            border-radius: 10px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .stat-card:hover {
@@ -163,7 +163,7 @@ $statusData = $conn->query("
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
                 <h1 class="h3 mb-1 text-gray-800 fw-bold">Analytics Dashboard</h1>
-                <p class="text-muted">Comprehensive insights and performance metrics</p>
+                <p class="text-muted">Comprehensive insights</p>
             </div>
             <div class="dropdown">
                 <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -378,13 +378,13 @@ $statusData = $conn->query("
             
             <!-- Performance Metrics -->
             <div class="col-lg-6">
-                <div class="glass-card p-4 h-100">
+                <div class="glass-card p-4 h-95">
                     <h5 class="fw-bold mb-3">
                         <i class="fas fa-tachometer-alt text-primary me-2"></i> Performance Metrics
                     </h5>
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <div class="glass-card p-3 gradient-primary text-white rounded-lg">
+                            <div class="glass-card p-3 gradient-primary text-black rounded-lg">
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h6 class="mb-1">Acceptance Rate</h6>
@@ -395,15 +395,15 @@ $statusData = $conn->query("
                                             ?>
                                         </h3>
                                     </div>
-                                    <i class="fas fa-check-circle fa-2x opacity-25"></i>
+                                    <i class="fas fa-check-circle fa-2x opacity-15"></i>
                                 </div>
-                                <small class="opacity-75">
+                                <small class="opacity-25">
                                     <?= $stats['accepted'] ?> of <?= $stats['total_apps'] ?> applications
                                 </small>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="glass-card p-3 gradient-success text-white rounded-lg">
+                            <div class="glass-card p-3 gradient-success text-blue rounded-lg">
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h6 class="mb-1">Avg. Response Time</h6>
@@ -414,13 +414,13 @@ $statusData = $conn->query("
                                             ?>
                                         </h3>
                                     </div>
-                                    <i class="fas fa-stopwatch fa-2x opacity-25"></i>
+                                    <i class="fas fa-stopwatch fa-2x opacity-15"></i>
                                 </div>
                                 <small class="opacity-5">From submission to decision</small>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="glass-card p-3 gradient-warning text-white rounded-lg">
+                            <div class="glass-card p-3 gradient-warning text-black rounded-lg">
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h6 class="mb-1">Student Engagement</h6>
@@ -433,11 +433,11 @@ $statusData = $conn->query("
                                     </div>
                                     <i class="fas fa-users fa-2x opacity-25"></i>
                                 </div>
-                                <small class="opacity-75"><?= $stats['unique_applicants'] ?> unique applicants</small>
+                                <small class="opacity-25"><?= $stats['unique_applicants'] ?> unique applicants</small>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="glass-card p-3 gradient-info text-white rounded-lg">
+                            <div class="glass-card p-3 gradient-info text-black rounded-lg">
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h6 class="mb-1">Opportunity Fill Rate</h6>
@@ -450,11 +450,11 @@ $statusData = $conn->query("
                                     </div>
                                     <i class="fas fa-briefcase fa-2x opacity-25"></i>
                                 </div>
-                                <small class="opacity-75">Of <?= $stats['active_opportunities'] ?> opportunities</small>
+                                <small class="opacity-25">Of <?= $stats['active_opportunities'] ?> opportunities</small>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="glass-card p-3 gradient-danger text-white rounded-lg">
+                            <div class="glass-card p-3 gradient-danger text-black rounded-lg">
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h6 class="mb-1">Weekly Growth</h6>
@@ -467,11 +467,11 @@ $statusData = $conn->query("
                                     </div>
                                     <i class="fas fa-chart-line fa-2x opacity-25"></i>
                                 </div>
-                                <small class="opacity-75"><?= $stats['weekly_apps'] ?> new applications</small>
+                                <small class="opacity-25"><?= $stats['weekly_apps'] ?> new applications</small>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="glass-card p-3 gradient-secondary text-white rounded-lg">
+                            <div class="glass-card p-3 gradient-secondary text-black rounded-lg">
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h6 class="mb-1">Company Response</h6>
@@ -484,7 +484,7 @@ $statusData = $conn->query("
                                     </div>
                                     <i class="fas fa-building fa-2x opacity-25"></i>
                                 </div>
-                                <small class="opacity-75">Avg. time to review</small>
+                                <small class="opacity-25">Avg. time to review</small>
                             </div>
                         </div>
                     </div>

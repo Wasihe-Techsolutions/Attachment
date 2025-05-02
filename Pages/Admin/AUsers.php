@@ -33,7 +33,7 @@ $users = $conn->query("
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Management - AttachME</title>
+    <title>User Management</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -119,8 +119,7 @@ $users = $conn->query("
                     <table class="table table-hover mb-0">
                         <thead class="bg-primary text-white">
                             <tr>
-                                <th>ID</th>
-                                <th>Name</th>
+                                <th>User ID</th>
                                 <th>Email</th>
                                 <th>Role</th>
                                 <th>Status</th>
@@ -131,7 +130,7 @@ $users = $conn->query("
                             <?php foreach ($users as $user): ?>
                             <tr data-role="<?= $user['role'] ?>">
                                 <td><?= $user['user_id'] ?></td>
-                                <td><?= $user['name'] !== null ? htmlspecialchars($user['name']) : 'N/A' ?></td>
+                                <!-- <td><?= $user['name'] !== null ? htmlspecialchars($user['name']) : 'N/A' ?></td> -->
                                 <td><?= htmlspecialchars($user['email']) ?></td>
                                 <td>
                                     <span class="badge role-badge bg-<?= 

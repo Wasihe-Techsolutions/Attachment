@@ -36,7 +36,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - AttachME</title>
+    <title>Admin Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -50,26 +50,26 @@ try {
         
         body {
             background-color: var(--light);
-            padding-bottom: 60px;
+            padding-bottom: 70px;
         }
         
         .stat-card {
-            border-radius: 10px;
-            border-left: 5px solid;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            border-left: 25px solid;
+            transition: all 0.5s ease;
+            box-shadow: 10px 4px 6px rgba(0,0,0,0.1);
             height: 100%;
             background: white;
         }
         
         .stat-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
         }
         
         .stat-icon {
             font-size: 2rem;
-            opacity: 0.7;
+            opacity: 0.8;
         }
         
         .card-primary {
@@ -90,9 +90,9 @@ try {
         
         .dashboard-header {
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 10px 4px 6px rgba(0,0,0,0.1);
+            padding: 1.6rem;
             margin-bottom: 2rem;
         }
         
@@ -122,11 +122,8 @@ try {
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <h1 class="h3 mb-1 text-gray-800">Dashboard Overview</h1>
-                    <p class="mb-0 text-muted">Welcome back, Admin</p>
                 </div>
-                <!-- <button class="btn btn-primary">
-                    <i class="fas fa-download fa-sm"></i> Generate Report
-                </button> -->
+                
             </div>
         </div>
 
@@ -192,11 +189,10 @@ try {
                     <table class="table table-hover mb-0">
                         <thead>
                             <tr>
-                                <th>Student</th>
+                                <th>Students</th>
                                 <th>Opportunity</th>
                                 <th>Status</th>
                                 <th>Date</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -213,11 +209,7 @@ try {
                                     </span>
                                 </td>
                                 <td><?= date('M d, Y', strtotime($activity['submitted_at'])) ?></td>
-                                <td>
-                                    <button class="btn btn-sm btn-outline-primary">
-                                        <i class="fas fa-eye"></i> View
-                                    </button>
-                                </td>
+                                
                             </tr>
                             <?php endforeach; ?>
                         </tbody>
