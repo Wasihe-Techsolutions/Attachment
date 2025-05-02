@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - AttachME</title>
+    <title>Login - AttachApp</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome for Icons -->
@@ -67,14 +67,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <!-- Top Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3">
         <div class="container-fluid d-flex justify-content-between">
-            <h2 class="text-white fw-bold fs-3" style="margin-left: 45%;"> AttachME - Login</h2>
+            <h2 class="text-white fw-bold fs-3" style="margin-left: 45%;"> AttachApp - Login</h2>
         </div>
     </nav>
     
     <!-- Main Content -->
     <div class="container p-5 flex-grow-1 d-flex justify-content-center align-items-center">
         <div class="card border-0 shadow-sm p-4 bg-white rounded-lg w-100" style="max-width: 400px;">
-            <h5 class="fw-bold text-center text-primary mb-3">Log In to Your Account</h5>
+            <h1 class="fw-bold text-center text-primary mb-3">Student Login</h1>
             
             <!-- Display Error Message -->
             <?php if (!empty($error)): ?>
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <!-- Login Form -->
             <form id="loginForm" method="POST">
 
-                <h6 class="fw-bold text-secondary text-center">Student Login</h6>
+                <!-- <h6 class="fw-bold text-secondary text-center">Student Login</h6> -->
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <a href="forgot_password.php" class="text-primary fw-bold">Forgot Password?</a>
             </p>
             <p class="text-center mt-2">
-                Not registered? <a href="StudentReg.php" class="text-primary fw-bold">Create account</a>
+                Don't have an account? <a href="StudentReg.php" class="text-primary fw-bold">Create account</a>
             </p>
         </div>
     </div>

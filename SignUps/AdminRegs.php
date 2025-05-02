@@ -119,11 +119,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <!-- Main Content -->
     <div class="container p-5 flex-grow-1 d-flex justify-content-center align-items-center">
         <div class="card border-0 shadow-sm p-4 bg-white rounded-lg w-100" style="max-width: 500px;">
-            <h5 class="fw-bold text-center text-primary mb-3">Create Your Admin Account</h5>
+            <h1 class="fw-bold text-center text-primary mb-3">Admin Registration</h1>
             
             <!-- Admin Signup -->
             <form id="adminSignupForm" class="signup-form" method="POST" action="../SignUps/AdminRegs.php">
-                <h6 style="text-align: center;" class="fw-bold text-secondary">👨‍💼 Admin Registration</h6>
+                <!-- <h6 style="text-align: center;" class="fw-bold text-secondary">Admin Registration</h6> -->
                 <div class="mb-3">
                     <label for="adminName" class="form-label">Admin Name</label>
                     <div class="input-group">
@@ -145,21 +145,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <label for="adminPassword" class="form-label">Password</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                        <input name="password" type="password" class="form-control" id="adminPassword" placeholder="Create a strong password" required>
+                        <input name="password" type="password" class="form-control" id="adminPassword" placeholder="Create password" required>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="confirmAdminPassword" class="form-label">Confirm Password</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                        <input name="confirm_password" type="password" class="form-control" id="confirmAdminPassword" placeholder="Re-enter password" required>
+                        <input name="confirm_password" type="password" class="form-control" id="confirmAdminPassword" placeholder="Confirm password" required>
                     </div>
                 </div>
                 <button name="submit" type="submit" class="btn btn-primary w-100">Sign Up as Admin</button>
             </form>
             
             <p class="text-center mt-3">
-                Already registered? <a href="Alogin.php" class="text-primary fw-bold">Login here</a>
+                Already have account? <a href="Alogin.php" class="text-primary fw-bold">Login here</a>
             </p>
         </div>
     </div>

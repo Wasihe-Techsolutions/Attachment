@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Sign Up - AttachME</title>
+    <title>Company Sign Up - AttachApp</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome for Icons -->
@@ -108,11 +108,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <!-- Main Content -->
     <div class="container p-5 flex-grow-1 d-flex justify-content-center align-items-center">
         <div class="card border-0 shadow-sm p-4 bg-white rounded-lg w-100" style="max-width: 500px;">
-            <h5 class="fw-bold text-center text-primary mb-3">Create Your Company Account</h5>
+            <h1 class="fw-bold text-center text-primary mb-3">Company Registration</h1>
             
             <!-- Company Signup -->
             <form id="companySignupForm" class="signup-form" method="POST" action="../SignUps/CompanyReg.php">
-                <h6 style="text-align: center;" class="fw-bold text-secondary">Company Registration</h6>
+                <!-- <h6 style="text-align: center;" class="fw-bold text-secondary">Company Registration</h6> -->
                 <div class="mb-3">
                     <label for="companyName" class="form-label">Company Name</label>
                     <div class="input-group">
@@ -177,21 +177,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <label for="companyPassword" class="form-label">Password</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                        <input name="password" type="password" class="form-control" id="companyPassword" placeholder="Create a strong password" required>
+                        <input name="password" type="password" class="form-control" id="companyPassword" placeholder="Create a password" required>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="confirmCompanyPassword" class="form-label">Confirm Password</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                        <input name="confirm_password" type="password" class="form-control" id="confirmCompanyPassword" placeholder="Re-enter password" required>
+                        <input name="confirm_password" type="password" class="form-control" id="confirmCompanyPassword" placeholder="Confirm password" required>
                     </div>
                 </div>
                 <button name="submit" type="submit" class="btn btn-primary w-100">Sign Up as Company</button>
             </form>
             
             <p class="text-center mt-3">
-                Already registered? <a href="Clogin.php" class="text-primary fw-bold">Login here</a>
+                Already have account? <a href="Clogin.php" class="text-primary fw-bold">Login here</a>
             </p>
         </div>
     </div>
