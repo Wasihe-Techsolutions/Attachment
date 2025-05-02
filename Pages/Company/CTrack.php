@@ -130,18 +130,18 @@ try {
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue shadow-lg p-3">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold text-white" href="CHome.php">AttachME</a>
+            <a class="navbar-brand fw-bold text-white" href="CHome.php">Attach Hub</a>
             <ul class="navbar-nav d-flex flex-row gap-4">
-                <li class="nav-item"><a href="CHome.php" class="nav-link text-white fw-bold fs-5">Dashboard</a></li>
+                <li class="nav-item"><a href="CHome.php" class="nav-link text-black fw-bold fs-5">Dashboard</a></li>
                 <li class="nav-item"><a href="COpportunities.php"
                         class="nav-link text-white fw-bold fs-5">Opportunities</a></li>
                 <li class="nav-item"><a href="CTrack.php"
                         class="nav-link text-white fw-bold fs-5 active">Applications</a></li>
-                <li class="nav-item"><a href="CNotifications.php" class="nav-link text-white fw-bold fs-5">Messages</a>
+                <li class="nav-item"><a href="CNotifications.php" class="nav-link text-black fw-bold fs-5">Messages</a>
                 </li>
-                <li class="nav-item"><a href="CProfile.php" class="nav-link text-white fw-bold fs-5">Profile</a></li>
+                <li class="nav-item"><a href="CProfile.php" class="nav-link text-black fw-bold fs-5">Profile</a></li>
             </ul>
         </div>
     </nav>
@@ -228,7 +228,6 @@ try {
                     <div class="text-center py-5">
                         <i class="fas fa-file-alt fa-4x text-muted mb-3"></i>
                         <h5 class="text-muted">No applications found</h5>
-                        <p class="text-muted">There are no applications matching your selected filter</p>
                         <a href="COpportunities.php" class="btn btn-primary mt-3">
                             <i class="fas fa-plus me-1"></i> Post New Opportunity
                         </a>
@@ -238,14 +237,6 @@ try {
         </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">&copy; 2025 AttachME. All rights reserved.</p>
-        <div class="d-flex justify-content-center gap-4 mt-2">
-            <a href="../../help-center.php" class="text-white fw-bold">Help Center</a>
-            <a href="../../terms.php" class="text-white fw-bold">Terms of Service</a>
-            <a href="../../contact.php" class="text-white fw-bold">Contact Support</a>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../Javascript/CTrack.js"></script>
