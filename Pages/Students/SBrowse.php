@@ -24,7 +24,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse Opportunities - AttachME</title>
+    <title>Browse</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Tailwind CSS -->
@@ -45,7 +45,7 @@ try {
         <?php endif; ?>
 <br><br><br>
         <header class="d-flex justify-content-between align-items-center mb-4 bg-white p-4 shadow rounded">
-            <h2 class="text-3xl fw-bold">Explore Attachment Opportunities</h2>
+            <h2 class="text-3xl fw-bold">Search Opportunities</h2>
             <input type="text" class="form-control w-50" id="searchOpportunities" placeholder="🔍 Search by title, company, or location...">
         </header>
 
@@ -75,7 +75,7 @@ try {
                             $has_applied = $applied_stmt->fetch();
                             
                             if ($has_applied): ?>
-                                <span class="badge bg-success p-3">Applied ✓</span>
+                                <span class="badge bg-success p-3">Applied  ✓</span>
                             <?php else: ?>
                                 <button class="btn btn-primary btn-lg apply-btn" 
                                         data-bs-toggle="modal" 
@@ -105,7 +105,7 @@ try {
                             <input type="hidden" name="opportunities_id" id="modalOpportunityId" value="">
                             
                             <div class="mb-4">
-                                <label class="form-label fw-bold">Upload Cover Letter (PDF only)</label>
+                                <label class="form-label fw-bold">Upload Cover Letter</label>
                                 <div class="file-upload-wrapper">
                                     <input type="file" class="form-control" name="cover_letter" accept=".pdf" required>
                                     <small class="text-muted">Max size: 5MB</small>
@@ -113,7 +113,7 @@ try {
                             </div>
                             
                             <div class="mb-4">
-                                <label class="form-label fw-bold">Upload Resume (PDF only)</label>
+                                <label class="form-label fw-bold">Upload Resume</label>
                                 <div class="file-upload-wrapper">
                                     <input type="file" class="form-control" name="resume" accept=".pdf" required>
                                     <small class="text-muted">Max size: 5MB</small>

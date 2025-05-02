@@ -48,7 +48,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AttachME Student Dashboard</title>
+    <title>Student Portal</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -57,19 +57,19 @@ try {
 <body>
     <main class="container p-5 flex-grow-1">
         <header class="d-flex justify-content-between align-items-center mb-4 bg-white p-4 shadow rounded">
-            <h3 class="text-3xl fw-bold">Welcome, <?php echo htmlspecialchars($student["full_name"] ?? "Guest"); ?>!</h3>
-            <p class="text-muted">Track your applications, explore new opportunities, and manage your profile.</p>
+            <h3 class="text-3xl fw-bold">Welcome back, <?php echo htmlspecialchars($student["full_name"] ?? "Guest"); ?>!</h3>
+            <p class="text-muted">Explore new opportunities and manage your profile.</p>
         </header><br><br><br>
 
         <!-- Dashboard Overview Cards -->
         <div class="row g-4 mb-4">
             <div class="col-md-4">
-                <div class="card border-0 shadow-sm p-4 bg-primary text-white rounded-lg text-center">
+                <div class="card border-3 shadow-sm p-4 bg-primary text-white rounded-lg text-center">
                     <h5 class="fw-bold fs-5">Total Applications</h5>
                     <h2 id="totalApplications" class="fw-bold fs-3"><?php echo $counts['total'] ?? 0; ?></h2>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card border-0 shadow-sm p-4 bg-success text-white rounded-lg text-center">
                     <h5 class="fw-bold fs-5">Accepted Applications</h5>
                     <h2 id="acceptedApplications" class="fw-bold fs-3"><?php echo $counts['accepted'] ?? 0; ?></h2>
@@ -85,7 +85,7 @@ try {
 
         <!-- Recent Applications -->
         <div class="card border-0 shadow-sm p-4 bg-white rounded-lg">
-            <h5 class="fw-bold fs-5 mb-3">My Recent Applications</h5>
+            <h5 class="fw-bold fs-5 mb-3">My Applications</h5>
             <table class="table table-striped">
                 <thead class="bg-dark text-white">
                     <tr>

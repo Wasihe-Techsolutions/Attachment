@@ -62,7 +62,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messages - AttachME</title>
+    <title>Message</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -154,11 +154,7 @@ try {
     </div>
 
     <footer class="bg-dark text-white text-center py-3 mt-auto">
-        <p class="mb-0">&copy; 2025 AttachME. All rights reserved.</p>
-        <div class="d-flex justify-content-center gap-4 mt-2">
-            <a href="../../help-center.php" class="text-white fw-bold">Help Center</a>
-            <a href="../../terms.php" class="text-white fw-bold">Terms of Service</a>
-            <a href="../../contact.php" class="text-white fw-bold">Contact Support:</a>
+      
         </div>
     </footer>
     
@@ -173,15 +169,7 @@ try {
             --card-bg: #ffffff;
             --border-color: #e9ecef;
         }
-        
-        .dark-mode {
-            --primary-color: #4361ee;
-            --secondary-color: #3f37c9;
-            --text-color: #f8f9fa;
-            --bg-color: #121212;
-            --card-bg: #1e1e1e;
-            --border-color: #2d2d2d;
-        }
+    
 
         body {
             background-color: var(--bg-color);
