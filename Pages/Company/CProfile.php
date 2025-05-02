@@ -205,6 +205,44 @@ try {
                             </form>
                         </div>
                     </div>
+
+                    <!-- Account Actions Card -->
+                    <div class="card border-danger danger-zone">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="fw-bold mb-0">
+                                <i class="fas fa-exclamation-triangle me-2"></i>Danger Zone
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h6 class="fw-bold">Delete Account</h6>
+                                    <p class="small text-muted mb-0">
+                                        This will permanently remove your company account and all related data.
+                                        This action cannot be undone.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <button class="btn btn-outline-danger" id="deleteAccountBtn">
+                                        <i class="fas fa-trash-alt me-1"></i>Delete Account
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mt-3 pt-3 border-top">
+                                <div class="col-md-8">
+                                    <h6 class="fw-bold">Logout</h6>
+                                    <p class="small text-muted mb-0">
+                                        Securely sign out of your account from this device.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <a href="../../auth/logout.php" class="btn btn-outline-secondary">
+                                        <i class="fas fa-sign-out-alt me-1"></i>Logout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
