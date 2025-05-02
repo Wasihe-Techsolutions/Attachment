@@ -90,9 +90,7 @@ try {
             </div>
         <?php endif; ?>
 
-        <h4 class="fw-bold text-primary"> Messages</h4>
-        <p class="text-muted">View and respond to messages from students.</p>
-        
+        <h4 class="fw-bold text-primary"> Messages</h4>        
         <div class="card shadow p-3 mb-4">
             <div class="chat-box d-flex flex-column" id="messageList">
                 <?php foreach ($messages as $msg): ?>
