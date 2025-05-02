@@ -8,7 +8,7 @@ if (!isset($_SESSION["role"]) || $_SESSION["role"] !== "admin") {
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3 fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-3 me-4" href="../Admin/AHome.php">
-            <span class="text-primary">Attach</span><span class="text-white">ME</span> Admin
+            <span class="text-primary">Attach</span><span class="text-white">Hub</span> Admin
         </a>
         
         <div class="d-flex">

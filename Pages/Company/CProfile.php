@@ -205,16 +205,6 @@ try {
                             </form>
                         </div>
                     </div>
-
-                    <!-- Account Actions Card -->
-                    <div class="card border-danger danger-zone">
-                        <div class="card-header bg-danger text-white">
-                            <h5 class="fw-bold mb-0">
-                                <i class="fas fa-exclamation-triangle me-2"></i>Danger Zone
-                            </h5>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
