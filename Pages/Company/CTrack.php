@@ -228,7 +228,6 @@ try {
                     <div class="text-center py-5">
                         <i class="fas fa-file-alt fa-4x text-muted mb-3"></i>
                         <h5 class="text-muted">No applications found</h5>
-                        <p class="text-muted">There are no applications matching your selected filter</p>
                         <a href="COpportunities.php" class="btn btn-primary mt-3">
                             <i class="fas fa-plus me-1"></i> Post New Opportunity
                         </a>
