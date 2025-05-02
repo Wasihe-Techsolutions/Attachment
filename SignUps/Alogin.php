@@ -71,9 +71,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body class="bg-gray-100 d-flex flex-column min-vh-100">
     
     <!-- Top Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3">
+    <nav class="navbar navbar-expand-lg shadow-lg p-3">
         <div class="container-fluid d-flex justify-content-between">
-            <h2 class="text-white fw-bold fs-3" style="margin-left: 45%;">AttachApp - Login</h2>
+            <h2 class="text-black fw-bold fs-3" style="margin-left: 45%;">Attach Hub</h2>
         </div>
     </nav>
     
